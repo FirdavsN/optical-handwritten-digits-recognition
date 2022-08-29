@@ -4,7 +4,7 @@ using a neural network model trained with TensorFlow.
 """
 
 __author__ = "Firdavs Nasriddinov"
-__version__ = 1.0
+__version__ = 2.0
 
 # Import modules
 from button import Button
@@ -27,8 +27,6 @@ DIRS = {'tf_mnist': 'tf_models_mnist/tf_model_final.pkl',
 # Dark mode icon
 DARK_ICON = pg.image.load(DIRS['dark_icon'])
 DARK_ICON = pg.transform.scale(DARK_ICON, (40, 40))
-
-print(type(DARK_ICON))
 
 # Light mode icon
 LIGHT_ICON = pg.image.load(DIRS['light_icon'])
@@ -69,9 +67,12 @@ class OHDR:
         # Screen dimensions
         self.height, self.width = 1000, self.box_size*self.num_pixels 
 
+        title = f'Optical Handwritten Digits Recognition - \
+{dataset_type.upper()}'
+
         pg.init()
         pg.font.init()
-        pg.display.set_caption('Optical Handwritten Digits Recognition')
+        pg.display.set_caption(title)
 
         # Pygame screen to display contents
         self.screen = pg.display.set_mode([self.width, self.height])
