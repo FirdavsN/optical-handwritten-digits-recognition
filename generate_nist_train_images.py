@@ -53,7 +53,7 @@ def save_images(typ):
 
     num_total_images = get_num_images(typ)
 
-    filename = f'nist_data/{typ}_images_nist.pkl'
+    filename = f'nist_data/{typ}_images.pkl'
 
     all_images = np.empty([num_total_images, 128, 128], dtype=np.uint8)
 
