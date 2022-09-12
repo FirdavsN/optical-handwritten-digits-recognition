@@ -11,7 +11,7 @@
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+<!-- * [Liceunnnse](#license) -->
 
 
 ## General Information
@@ -55,6 +55,8 @@ The new version of the program works by using a sequantial neural network model 
 
 ## Setup
 Run generate_nist_train_images.py to generate the nist data train images. This file is over 2GB, meaning it could not be uploaded to GitHub.
+
+Run setup.py to install requirements.
 
 
 ## Usage
